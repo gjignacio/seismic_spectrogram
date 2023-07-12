@@ -23,7 +23,18 @@ Plots two seismic traces, allowing the user to compare any arbitrary traces.<br>
 * **Performing spectrogram analysis:** `spectrogram_analysis`<br>
 Performs spectrogram analysis of a given trace signal.<br>
 
+
+## Neighboring Traces Analysis: Correlation Maps
 <center>
-  <img src="/images/correlation_map.png" alt="correlation_map" />
-  <img src="/images/trace_spectrogram.png" alt="trace_spectrogram" />
+  <img src="/images/02_correlation_map.png" alt="correlation_map" />
+</center>
+
+## Trace Analysis: Main Trace vs Average Trace 
+<center>
+  <img src="/images/03_trace_plot.png" alt="trace_plot" />
+</center>
+
+## Frequency and Phase Analysis: Trace Spectrogram
+<center>
+  <img src="/images/01_seismic_spectrogram.png" alt="trace_spectrogram" />
 </center>
