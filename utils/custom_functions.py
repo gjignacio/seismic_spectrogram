@@ -11,7 +11,6 @@ from scipy import signal
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-
 class Trace:
     """
     A class to represent a seismic trace.
@@ -322,11 +321,11 @@ def spectrogram_analysis(trace=None, dt=0.002, wl=101, ws=4):
     ax2.set_title('Amplitude Spectrogram')
 
     # Plot the phase variation in the third subplot
-    max_phase = 90
+    max_phase = 180
     phase_plot = ax3.contourf(phase_frequencies,
                               phase_times,
                               phase.T,
-                              cmap='RdBu_r',
+                              cmap='twilight_shifted',
                               levels=np.arange(-max_phase, max_phase + 1, 1))
 
     for hz in [25, 50, 75, 100]:
@@ -349,4 +348,4 @@ def spectrogram_analysis(trace=None, dt=0.002, wl=101, ws=4):
     plt.show()
 
     # Save the plot as an image file
-    fig.savefig("Output.png")
+    fig.savefig("Output.png")    
